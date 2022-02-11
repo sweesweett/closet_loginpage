@@ -41,7 +41,7 @@
         <button class="btn valid" onclick="validId()">중복체크</button>
         </div>
         <label for="pw">비밀번호</label>
-        <input type="password" name="pw" placeholder="영어,숫자 혼용(4~8자)" id="signup-pw">
+        <input type="password" name="pw" placeholder="(4~8자)" id="signup-pw">
         <label for="checkpw">비밀번호확인</label>
         <input type="password" name="pwCheck" id="pw-check" onchange="confirmForm()">
         <span id="same"></span>
@@ -53,7 +53,7 @@
       
     </div>
     <input type="submit" class="submit submit-signin show" value="로그인" form="sign-in" onclick="login()">
-    <input type="submit" class="submit submit-signup" value="회원가입" form="sign-up" onclick="formSubmit()">
+    <input type="submit" class="submit submit-signup" value="회원가입" form="sign-up" onclick="formSubmit()" >
   </div>
 </body>
 
