@@ -9,7 +9,7 @@
   <!-- google+font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Festive&family=Do+Hyeon&Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Festive&family=Do+Hyeon&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/main.js"></script>
@@ -41,12 +41,12 @@
         <button class="btn valid" onclick="validId()">중복체크</button>
         </div>
         <label for="pw">비밀번호</label>
-        <input type="password" name="pw" placeholder="(4~8자)" id="signup-pw">
+        <input type="password" name="pw" placeholder="영어,숫자 혼용(4~8자)" id="signup-pw">
         <label for="checkpw">비밀번호확인</label>
         <input type="password" name="pwCheck" id="pw-check" onchange="confirmForm()">
         <span id="same"></span>
-        <label for="email">이메일주소</label>
-        <input type="email">
+        <label for="nickname" id="nickname">닉네임</label>
+        <input type="text">
 
       </form>
     </div>
