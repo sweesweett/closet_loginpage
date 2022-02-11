@@ -11,7 +11,7 @@ body{
   padding:10px;
   border: 2px solid #333;
   border-radius: 4px;
-  color:#333;
+  color:#102027;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
@@ -20,7 +20,11 @@ body{
   display: block;
 }
 input{
+  font-family: 'Do Hyeon', sans-serif;
   outline:none;
+  color:#102027;
+  letter-spacing: 2px;
+
 }
 
 .wrap{
@@ -55,7 +59,7 @@ input{
 .wrap .auth .btn-wrap .btn{
 border:none;
 }
-.wrap .auth .btn-wrap .btn.signin{
+.wrap .auth .btn-wrap .btn {
   border-radius: 12px 12px 0 0;
   background-color: #fff;
   
@@ -65,13 +69,8 @@ border:none;
   color:#fff;
   
 }
-
-.wrap .auth .btn-wrap .btn.signup{
-  border-radius: 12px 12px 0 0;
-  
-}
 .wrap .auth .btn-wrap .btn.signup.show{
-  border-radius: 12px 12px 0 0;
+
   background-color: #eeaeca;
   color:#fff;
   
@@ -80,39 +79,32 @@ border:none;
   padding:10px;
   box-sizing: border-box;
   background-color: #eeaeca;
+  border-radius: 0 0 12px 12px;
 }
-.wrap .auth .container .signin{
+.wrap .auth .container .form{
   display:none;
   width:90%;
   margin:0 auto;
   padding:10px;
+  
 }
-.wrap .auth .container .signin.show{
-  display: flex;
-  flex-direction: column;
-  color:#fff;
-}
-.wrap .auth .container input{
-  margin:5px 0;
-  padding:5px;
-  border-radius: 5px;
-  border:2px solid rgba(0,0,0,.3);
-  box-shadow: none;
-}
-.wrap .auth .container .signup{
-  display:none;
-  width:90%;
-  margin:0 auto;
-  padding:10px;
-}
-.wrap .auth .container .signup.show{
+
+.wrap .auth .container .form.show{
   display: flex;
   flex-direction: column;
   color:#fff;
 }
 
+.wrap .auth .container input{
+  margin:5px 0;
+  padding:7px;
+  border-radius: 5px;
+  border:2px solid rgba(0,0,0,.3);
+  
+}
+
 .wrap .submit{
-  display: block;
+  display: none;
   width:350px;
   font-size: 16px;
   font-weight: 700;
@@ -124,26 +116,12 @@ border:none;
   box-sizing: border-box;
   border:none;
 }
-.wrap .submit.submit-signin{
-  display: none;
-}
-.wrap .submit.submit-signin.show{
+.wrap .submit.show{
   display: block;
-}
-.wrap .submit.submit-signin.show:hover{
-  background-color:#f06292;
   color:#fff;
+}
+.wrap .submit.show:hover{
+  background-color:#f06292;
+  
   
 }
-.wrap .submit.submit-signup{
-  display: none;
-}
-.wrap .submit.submit-signup.show{
-  display: block;
-}
-.wrap .submit.submit-signup.show:hover{
-  background-color:#f06292;
-  color:#fff;
-  
-}
-
