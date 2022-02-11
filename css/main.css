@@ -1,3 +1,4 @@
+
 body{
   margin:0;
   background-color: #f8bbd0;
@@ -94,15 +95,36 @@ border:none;
   flex-direction: column;
   color:#fff;
 }
+.wrap .auth .container .form.show #same{
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+
+}
 
 .wrap .auth .container input{
-  margin:5px 0;
+  margin-bottom:10px;
   padding:7px;
   border-radius: 5px;
   border:2px solid rgba(0,0,0,.3);
+  box-sizing: border-box;
   
 }
+.wrap .auth .container .form .valid-email{
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .auth .container .form .valid-email #signup-email{
+  flex:80%;
+}
+.wrap .auth .container .form .valid-email .valid{
+height:35px;
+flex: 20%;
+margin-left: 5px;
+font-size:12px;
+padding:2px;
 
+}
 .wrap .submit{
   display: none;
   width:350px;
