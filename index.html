@@ -5,58 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title> What's in my closet</title>
   <!-- google+font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Festive&family=Do+Hyeon&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="./css/common.css">
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="">
   <script defer src="./js/main.js"></script>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="title">
-      What's in my closet
-    </div>
-    <div class="auth">
-      <div class="btn-wrap">
-      
-      <button class="btn signup">회원가입</button>
-      <button class="btn signin show">로그인</button>
-    </div>
-    <div class="container">
-      <form class="form signin show" id="sign-in">
-        <label for="username">아이디</label>
-        <input type="email" placeholder="example@email.com" >
-        <label for="password">PASSWORD</label>
-        <input type="password" >
-      </form>
-      <form method="post" name="signUpForm" class="form signup" id="sign-up">
-        
-        <label for="userid" id="userid">아이디</label>
-        <div class="valid-email">
-        <input type="email" placeholder="example@email.com" id="signup-email">
-        <button class="btn valid" onclick="validId()">중복체크</button>
-        </div>
-        <label for="pw">비밀번호</label>
-        <input type="password" name="pw" placeholder="영어,숫자 혼용(4~8자)" id="signup-pw">
-        <label for="checkpw">비밀번호확인</label>
-        <input type="password" name="pwCheck" id="pw-check" onchange="confirmForm()">
-        <span id="same"></span>
-        <label for="nickname" id="nickname">닉네임</label>
-        <input type="text">
-
-      </form>
-    </div>
-      
-    </div>
-    <input type="submit" class="submit submit-signin show" value="로그인" form="sign-in" onclick="login()">
-    <input type="submit" class="submit submit-signup" value="회원가입" form="sign-up" onclick="formSubmit()" >
-    <a href="javascript:void(0)">비밀번호찾기</a>
+  <!-- header -->
+  <header>
+    <div class="inner">
+     <ul class="left-nav">
+      <li><a href="javascript:void(0)">내 옷장</a></li>
+      <li><a href="javascript:void(0)">새 옷 등록</a></li>
+      <li><a href="javascript:void(0)">코디 추천</a></li>
+      <li><a href="javascript:void(0)">커뮤니티</a></li>
+     </ul>
+   <div class="right-nav">
+     <a href="/auth/">회원가입/로그인</a>  
+   </div>
   </div>
-  
-</body>
+  </header>
+
+   <!-- 메인 옷장 -->
+   <section class="main-wrap">
+    <a href="javascript:void(0)"><img class="main-closet" src="./images/closet_with_clothes.png" alt="closet"></a>
+   </section>
+  </body>
 
 </html>
